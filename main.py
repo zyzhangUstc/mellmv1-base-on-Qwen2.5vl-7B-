@@ -1,4 +1,5 @@
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import torch
 import io
 import cv2
@@ -13,7 +14,6 @@ from transformers import (
 from qwen_vl_utils import process_vision_info
 from preprocess import image_preprocess
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 def run_inference(image1_path, image2_path, model_path):
     print(f"正在从 {model_path} 加载模型...")
@@ -81,8 +81,8 @@ def run_inference(image1_path, image2_path, model_path):
 
 if __name__ == "__main__":
     # 在这里配置你的图片路径和模型路径
-    IMG1 = "path/to/your/image1.jpg" 
-    IMG2 = "path/to/your/image2.jpg"
+    IMG1 = "path/to/your/onset.jpg" 
+    IMG2 = "path/to/your/apex.jpg"
     MODEL_DIR = "model_path"
 
     run_inference(IMG1, IMG2, MODEL_DIR)
