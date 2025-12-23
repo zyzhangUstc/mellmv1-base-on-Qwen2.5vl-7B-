@@ -3,3 +3,9 @@ Micro-expressions (MEs) are crucial psychological responses with significant pot
 
 Paper: ([paper link](https://arxiv.org/pdf/2505.07007v1))
 Model_weight: link：https://pan.ustc.edu.cn/share/index/dce992fe6ae04c11ba86?p=1 ; password：JztJ
+
+
+#### Environment configuration:
+Refer to the installation method for the Qwen series models; you need to install `pip install qwen-vl-utils==0.0.14`
+#### Run:
+`CUDA_VISIBLE_DEVICES=0 python main.py`
